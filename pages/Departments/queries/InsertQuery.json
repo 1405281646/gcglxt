@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO departments (\n\tdname,\n\tdmname,\n\tdaddress,\n\tdmtel)\nVALUES (\n\t'{{insert_form.formData.dname}}',\n\t'{{insert_form.formData.dmname}}',\n\t'{{insert_form.formData.daddress}}',\n\t'{{insert_form.formData.dmtel}}');",
+      "body": "INSERT INTO departments (\n\tdname,\n\tdmname,\n\tdaddress,\n\tdmtel)\nVALUES (\n\t'{{insert_form.formData.dname}}',\n\t'{{insert_form.formData.dmname}}',\n\t'{{insert_form.formData.daddress}}',\n\t'{{insert_form.formData.dmtel}}');\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,6 +27,11 @@
       ]
     },
     "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],

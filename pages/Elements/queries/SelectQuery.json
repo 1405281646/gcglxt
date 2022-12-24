@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "\nSELECT elements.*,repositories.reno FROM elements,r_e,repositories\nWHERE \nrepositories.reno=r_e.reno and\nr_e.eno=elements.eno and \n ename like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'eno'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "\nSELECT *FROM elements\nWHERE \n\n ename like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'eno'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

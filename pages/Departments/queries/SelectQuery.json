@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT departments.*,factories.fno FROM departments,factories,f_d\nWHERE\nfactories.fno=f_d.fno and\nf_d.dno=departments.dno and \ndname like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'dno'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM departments\nWHERE dname like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'dno'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
