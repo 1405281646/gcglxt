@@ -117,6 +117,28 @@
                       "isVisible": true,
                       "labelTextSize": "0.875rem",
                       "label": "Eprice"
+                    },
+                    "reno": {
+                      "children": {},
+                      "dataType": "number",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.reno))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "fieldType": "Number Input",
+                      "sourceData": 21,
+                      "isCustomField": false,
+                      "accessor": "reno",
+                      "identifier": "reno",
+                      "position": 4,
+                      "originalIdentifier": "reno",
+                      "boxShadow": "none",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Reno"
                     }
                   },
                   "dataType": "object",
@@ -126,7 +148,8 @@
                     "ename": "Matsumoto Sakura",
                     "count": 841,
                     "eweight": 564.961054,
-                    "eprice": 70.553188
+                    "eprice": 70.553188,
+                    "reno": 21
                   },
                   "isCustomField": false,
                   "accessor": "__root_schema__",
@@ -263,6 +286,15 @@
                 },
                 {
                   "key": "schema.__root_schema__.children.eprice.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.reno.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.reno.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.reno.accentColor"
                 }
               ],
               "borderWidth": "0",
@@ -428,6 +460,7 @@
                         "count",
                         "eweight",
                         "eprice",
+                        "reno",
                         "customColumn1"
                       ],
                       "dynamicPropertyPathList": [
@@ -489,6 +522,9 @@
                         },
                         {
                           "key": "primaryColumns.eprice.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.reno.computedValue"
                         }
                       ],
                       "leftColumn": 0,
@@ -609,6 +645,25 @@
                           "isDerived": false,
                           "label": "eprice",
                           "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.eprice))}}",
+                          "cellBackground": ""
+                        },
+                        "reno": {
+                          "index": 5,
+                          "width": 150,
+                          "id": "reno",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "reno",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.reno))}}",
                           "cellBackground": ""
                         }
                       },
