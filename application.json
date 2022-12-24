@@ -1,0 +1,43 @@
+{
+  "pages": [
+    {
+      "id": "Factories",
+      "isDefault": true
+    },
+    {
+      "id": "Departments",
+      "isDefault": false
+    },
+    {
+      "id": "Repositories",
+      "isDefault": false
+    },
+    {
+      "id": "Products",
+      "isDefault": false
+    },
+    {
+      "id": "Elements",
+      "isDefault": false
+    },
+    {
+      "id": "Workers",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#C7F3F0",
+  "icon": "joystick",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}
