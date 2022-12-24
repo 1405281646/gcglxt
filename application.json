@@ -23,6 +23,30 @@
     {
       "id": "Workers",
       "isDefault": false
+    },
+    {
+      "id": "Package",
+      "isDefault": false
+    },
+    {
+      "id": "F_d",
+      "isDefault": false
+    },
+    {
+      "id": "F_r",
+      "isDefault": false
+    },
+    {
+      "id": "R_e",
+      "isDefault": false
+    },
+    {
+      "id": "R_p",
+      "isDefault": false
+    },
+    {
+      "id": "D_w",
+      "isDefault": false
     }
   ],
   "viewMode": false,
