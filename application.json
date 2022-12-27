@@ -5,15 +5,15 @@
       "isDefault": true
     },
     {
-      "id": "Departments",
-      "isDefault": false
-    },
-    {
       "id": "Repositories",
       "isDefault": false
     },
     {
-      "id": "Products",
+      "id": "Departments",
+      "isDefault": false
+    },
+    {
+      "id": "Workers",
       "isDefault": false
     },
     {
@@ -21,7 +21,7 @@
       "isDefault": false
     },
     {
-      "id": "Workers",
+      "id": "Products",
       "isDefault": false
     },
     {

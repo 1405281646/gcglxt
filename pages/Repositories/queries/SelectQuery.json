@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT* FROM repositories\nWHERE\n\nremname like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'reno'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM repositories\nWHERE remname like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'reno'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,11 +27,6 @@
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -49,5 +44,5 @@
   },
   "id": "Repositories_SelectQuery",
   "deleted": false,
-  "gitSyncId": "63a5b9750ab2a22cbb02c4a2_63a5bf100ab2a22cbb02c4bf"
+  "gitSyncId": "63a5b9750ab2a22cbb02c4a2_63aab2820ab2a22cbb02ca84"
 }

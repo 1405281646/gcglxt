@@ -95,28 +95,6 @@
                       "isVisible": true,
                       "labelTextSize": "0.875rem",
                       "label": "Retel"
-                    },
-                    "fno": {
-                      "children": {},
-                      "dataType": "number",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.fno))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                      "fieldType": "Number Input",
-                      "sourceData": 5,
-                      "isCustomField": false,
-                      "accessor": "fno",
-                      "identifier": "fno",
-                      "position": 3,
-                      "originalIdentifier": "fno",
-                      "boxShadow": "none",
-                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                      "iconAlign": "left",
-                      "isDisabled": false,
-                      "isRequired": false,
-                      "isSpellCheck": false,
-                      "isVisible": true,
-                      "labelTextSize": "0.875rem",
-                      "label": "Fno"
                     }
                   },
                   "dataType": "object",
@@ -125,8 +103,7 @@
                   "sourceData": {
                     "remno": 529,
                     "remname": "Douglas Chen",
-                    "retel": "8fn2r2G9vi",
-                    "fno": 5
+                    "retel": "8fn2r2G9vi"
                   },
                   "isCustomField": false,
                   "accessor": "__root_schema__",
@@ -254,15 +231,6 @@
                 },
                 {
                   "key": "schema.__root_schema__.children.retel.accentColor"
-                },
-                {
-                  "key": "schema.__root_schema__.children.fno.defaultValue"
-                },
-                {
-                  "key": "schema.__root_schema__.children.fno.borderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.fno.accentColor"
                 }
               ],
               "borderWidth": "0",
@@ -427,7 +395,6 @@
                         "remno",
                         "remname",
                         "retel",
-                        "fno",
                         "customColumn1"
                       ],
                       "dynamicPropertyPathList": [
@@ -486,9 +453,6 @@
                         },
                         {
                           "key": "primaryColumns.retel.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.fno.computedValue"
                         }
                       ],
                       "leftColumn": 0,
@@ -590,25 +554,6 @@
                           "isDerived": false,
                           "label": "retel",
                           "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.retel))}}",
-                          "cellBackground": ""
-                        },
-                        "fno": {
-                          "index": 4,
-                          "width": 150,
-                          "id": "fno",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "fno",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.fno))}}",
                           "cellBackground": ""
                         }
                       },
@@ -1655,8 +1600,9 @@
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "63a5b9750ab2a22cbb02c4a2_63a5bf0f0ab2a22cbb02c4ba"
+  "gitSyncId": "63a5b9750ab2a22cbb02c4a2_63aab2820ab2a22cbb02ca80"
 }
